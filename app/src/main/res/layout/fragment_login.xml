@@ -73,9 +73,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
+                android:id="@+id/btnRegister"
                 android:text="Criar conta" />
             <TextView
                 android:textAlignment="textEnd"
+                android:id="@+id/btnRecovery"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,6 +85,7 @@
                 android:text="Recuperar conta" />
         </LinearLayout>
         <ProgressBar
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:indeterminateTint="@color/white"
