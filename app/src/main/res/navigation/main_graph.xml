@@ -12,7 +12,10 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_authentication"
-            app:destination="@id/authentication" />
+            app:destination="@id/authentication"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            />
     </fragment>
     <navigation android:id="@+id/authentication"
         app:startDestination="@id/loginFragment">
@@ -38,5 +41,22 @@
                 android:id="@+id/action_loginFragment_to_recoveryAccountFragment"
                 app:destination="@id/recoveryAccountFragment" />
         </fragment>
+        <action
+            android:id="@+id/action_global_homeFragment"
+            app:destination="@id/homeFragment" />
     </navigation>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.guerber.taskapp.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_formTaskFragment"
+            app:destination="@id/formTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formTaskFragment"
+        android:name="com.guerber.taskapp.ui.FormTaskFragment"
+        android:label="fragment_form_task"
+        tools:layout="@layout/fragment_form_task" />
 </navigation>
