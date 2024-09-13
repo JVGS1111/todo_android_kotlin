@@ -43,7 +43,7 @@ class RecoveryAccountFragment : Fragment() {
         val email = binding.editEmail.text.toString().trim()
 
         if(email.isEmpty()){
-            return showBottomSheet(message = R.string.email_empty)
+            return showBottomSheet(message = getString(R.string.email_empty))
         }
 
         Toast.makeText(requireContext(), "Tudo certo", Toast.LENGTH_SHORT).show()

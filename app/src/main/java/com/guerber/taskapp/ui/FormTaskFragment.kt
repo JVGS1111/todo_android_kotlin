@@ -41,7 +41,7 @@ class FormTaskFragment : Fragment() {
     private fun validateForm(){
         val description = binding.editDescription.text.toString().trim()
         if(description.isEmpty()){
-            return showBottomSheet(message = R.string.description_formtask)
+            return showBottomSheet(message = getString(R.string.description_formtask))
         }
     }
 

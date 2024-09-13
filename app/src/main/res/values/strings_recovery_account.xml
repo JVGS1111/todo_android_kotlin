@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recovery_account__toolbar_title">Recuperar conta</string>
+    <string name="recovery_account__text">Informe seu email para recuperar sua conta, vamos te enviar um e-mail para recuperar sua conta</string>
+    <string name="recovery_account__btn_text">Enviar</string>
+</resources>

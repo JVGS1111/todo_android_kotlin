@@ -14,7 +14,7 @@
         android:layout_margin="16dp"
         android:src="@drawable/ic_add"
         app:tint="@color/color_default"
-        android:contentDescription="Adicionar tarefa"
+        android:contentDescription="@string/fragment_todo__content_description"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

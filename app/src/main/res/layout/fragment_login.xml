@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="E-mail" />
+            android:text="@string/label_email" />
 
         <EditText
             android:id="@+id/editEmail"
@@ -30,8 +30,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Digite seu email"
+            android:hint="@string/fragment_login__placeholder_email"
             android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
             />
 
         <TextView
@@ -39,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="Senha" />
+            android:text="@string/label_password" />
 
         <EditText
             android:id="@+id/editPassword"
@@ -48,9 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Digite sua senha"
+            android:hint="@string/fragment_login__placeholder_password"
             android:inputType="textPassword"
-            />
+            android:autofillHints="password" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
@@ -58,7 +59,7 @@
             android:layout_marginTop="16dp"
             android:id="@+id/btnLogin"
             style="@style/ButtonTheme"
-            android:text="LOGIN"
+            android:text="@string/fragment_login__btn_text"
             />
 
         <LinearLayout
@@ -72,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:id="@+id/btnRegister"
-                android:text="Criar conta" />
+                android:text="@string/fragment_login__btn_create_account_text" />
             <TextView
                 android:textAlignment="textEnd"
                 android:id="@+id/btnRecovery"
@@ -80,7 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Recuperar conta" />
+                android:text="@string/fragment_login__btn_create_account_text" />
         </LinearLayout>
         <ProgressBar
             android:id="@+id/progressBar"

@@ -51,10 +51,10 @@ class LoginFragment : Fragment() {
         val password = binding.editPassword.text.toString().trim()
         //return  findNavController().navigate(R.id.action_global_homeFragment)
         if(email.isEmpty()){
-            return showBottomSheet(message = R.string.email_empty)
+            return showBottomSheet(message = getString(R.string.email_empty))
         }
         if(password.isEmpty()){
-            return showBottomSheet(message = R.string.password_empty)
+            return showBottomSheet(message = getString(R.string.password_empty))
         }
 
         findNavController().navigate(R.id.action_global_homeFragment)

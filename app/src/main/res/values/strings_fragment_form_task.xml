@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_form_task__toolbar_title">Nova tarefa</string>
+    <string name="fragment_form_task__create_task_hint">Descreva sua tarefa</string>
+    <string name="fragment_form_task__label_description">Descrição</string>
+    <string name="fragment_form_task__label_status">Status</string>
+    <string name="fragment_form_task__btn_text">Salvar</string>
+
+    <string name="status_task_todo">A FAZER</string>
+    <string name="status_task_doing">FAZENDO</string>
+    <string name="status_task_done">FEITAS</string>
+
+    <string name="fragment_form_task__radio_label_todo">A Fazer</string>
+    <string name="fragment_form_task__radio_label_doing">Fazendo</string>
+    <string name="fragment_form_task__radio_label_done">Feita</string>
+</resources>

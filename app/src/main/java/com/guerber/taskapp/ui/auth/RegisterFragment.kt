@@ -46,16 +46,16 @@ class RegisterFragment : Fragment() {
         val confirmPassword = binding.edtConfirmPassword.text.toString().trim()
 
         if(email.isEmpty()){
-            return showBottomSheet(message = R.string.email_empty_register_fragment)
+            return showBottomSheet(message = getString(R.string.email_empty_register_fragment))
         }
         if(password.isEmpty()){
-            return showBottomSheet(message = R.string.password_empty_register_fragment)
+            return showBottomSheet(message = getString(R.string.password_empty_register_fragment))
         }
         if(confirmPassword.isEmpty()){
-            return showBottomSheet(message = R.string.confirm_password_empty_register_fragment)
+            return showBottomSheet(message = getString(R.string.confirm_password_empty_register_fragment))
         }
         if(confirmPassword != password){
-            return showBottomSheet(message = R.string.confirmation_password_does_not_match_register_fragment)
+            return showBottomSheet(message = getString(R.string.confirmation_password_does_not_match_register_fragment))
         }
 
         Toast.makeText(requireContext(), "Tudo certo", Toast.LENGTH_SHORT).show()

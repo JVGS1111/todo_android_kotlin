@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_login__placeholder_email">Digite seu e-mail</string>
+    <string name="fragment_login__placeholder_password">Digite sua senha</string>
+    <string name="fragment_login__btn_text">Login</string>
+    <string name="fragment_login__btn_create_account_text">Criar conta</string>
+    <string name="fragment_login__btn_recovery_account_text">Recuperar conta</string>
+</resources>

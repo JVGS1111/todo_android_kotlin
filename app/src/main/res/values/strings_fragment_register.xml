@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_register__toolbar_title">Criar conta</string>
+    <string name="fragment_register__btn_text">Criar conta</string>
+
+</resources>

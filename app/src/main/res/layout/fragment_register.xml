@@ -23,7 +23,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Criar conta"
+                    android:text="@string/fragment_register__toolbar_title"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/white"
 
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="E-mail" />
+                android:text="@string/label_email" />
 
             <EditText
                 android:id="@+id/edtEmail"
@@ -54,16 +54,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Digite seu email"
+                android:hint="@string/placeholder_email"
                 android:inputType="textEmailAddress"
-                />
+                android:autofillHints="emailAddress" />
 
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Senha" />
+                android:text="@string/label_password"  />
 
             <EditText
                 android:id="@+id/edtPassword"
@@ -72,15 +72,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Digite sua senha"
+                android:hint="@string/placeholder_password"
                 android:inputType="textPassword"
+                android:importantForAutofill="no"
                 />
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Confirmar senha" />
+                android:text="@string/label_confirm_password" />
 
             <EditText
                 android:id="@+id/edtConfirmPassword"
@@ -89,9 +90,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Digite sua senha novamente"
+                android:hint="@string/placeholder_confirm_password"
                 android:inputType="textPassword"
-                />
+                android:importantForAutofill="no" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
@@ -99,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 style="@style/ButtonTheme"
-                android:text="CRIAR CONTA"
+                android:text="@string/fragment_register__btn_text"
                />
 
 
