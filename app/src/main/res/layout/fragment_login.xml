@@ -18,15 +18,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="E-mail" />
 
         <EditText
-            android:background="@drawable/bg_edit_text"
-            android:padding="16dp"
+            android:id="@+id/editEmail"
+            style="@style/EditTextTheme"
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,8 +42,8 @@
             android:text="Senha" />
 
         <EditText
-            android:background="@drawable/bg_edit_text"
-            android:padding="16dp"
+            android:id="@+id/editPassword"
+            style="@style/EditTextTheme"
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,11 +57,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:id="@+id/btnLogin"
-            android:background="@drawable/bg_btn"
+            style="@style/ButtonTheme"
             android:text="LOGIN"
-            android:textColor="@color/color_default"
-            android:textStyle="bold"
-            app:backgroundTint="@null" />
+            />
 
         <LinearLayout
             android:layout_marginTop="4dp"

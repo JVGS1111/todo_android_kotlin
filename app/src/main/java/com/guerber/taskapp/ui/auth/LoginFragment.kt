@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.guerber.taskapp.databinding.FragmentLoginBinding
 import com.guerber.taskapp.R
+import com.guerber.taskapp.utils.showBottomSheet
 
 class LoginFragment : Fragment() {
 
@@ -33,7 +35,8 @@ class LoginFragment : Fragment() {
 
     private fun initListeners(){
         binding.btnLogin.setOnClickListener{
-            findNavController().navigate(R.id.action_global_homeFragment)
+            validateData()
+           // findNavController().navigate(R.id.action_global_homeFragment)
         }
         binding.btnRegister.setOnClickListener{
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
@@ -41,6 +44,20 @@ class LoginFragment : Fragment() {
         binding.btnRecovery.setOnClickListener{
             findNavController().navigate(R.id.action_loginFragment_to_recoveryAccountFragment)
         }
+    }
+
+    private fun validateData(){
+        val email = binding.editEmail.text.toString().trim()
+        val password = binding.editPassword.text.toString().trim()
+        //return  findNavController().navigate(R.id.action_global_homeFragment)
+        if(email.isEmpty()){
+            return showBottomSheet(message = R.string.email_empty)
+        }
+        if(password.isEmpty()){
+            return showBottomSheet(message = R.string.password_empty)
+        }
+
+        findNavController().navigate(R.id.action_global_homeFragment)
     }
 
     override fun onDestroyView() {
